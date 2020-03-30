@@ -1,16 +1,16 @@
 interface PropsInt {
     limit: number;
 }
-export default class LimitedArray {
-    data: any[];
+export default class LimitedArray<T> {
+    data: T[];
     limit: number;
     constructor(props?: PropsInt);
     setLimit(limit: number): boolean;
     checkLimit(): boolean;
     add(data: any): boolean;
     splice(from: number, to: number): void;
-    getData(): any[];
-    at(index: number): any;
+    getData(): T[];
+    at(index: number): T;
     getLength(): number;
     reset(): void;
 }

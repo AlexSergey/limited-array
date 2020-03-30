@@ -4,8 +4,8 @@ interface PropsInt {
 
 const DEFAULT_LENGTH = 10;
 
-export default class LimitedArray {
-    public data: any[] = [];
+export default class LimitedArray<T> {
+    public data: T[] = [];
     public limit: number = 0;
 
     constructor(props?: PropsInt) {
@@ -42,11 +42,11 @@ export default class LimitedArray {
         this.data.splice(from, to);
     }
 
-    getData(): any[] {
+    getData(): T[] {
         return this.data.map(item => item);
     }
 
-    at(index: number): any {
+    at(index: number): T {
         return this.data[index];
     }
 

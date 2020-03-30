@@ -1,6 +1,6 @@
 /*!
  * banner:
- * limited-array: 2.0.1
+ * limited-array: 2.0.2
  * Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/limited-array)
  * Array with a limit to size. It's very similar to the queue
  * ISC

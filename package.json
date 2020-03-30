@@ -1,6 +1,6 @@
 {
   "name": "limited-array",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Array with a limit to size. It's very similar to the queue",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

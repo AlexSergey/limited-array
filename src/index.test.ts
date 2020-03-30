@@ -3,7 +3,7 @@ import LimitedArray from './index';
 let limitedArray;
 
 test('Initialize LimitedArray', () => {
-    limitedArray = new LimitedArray({ limit: 20 });
+    limitedArray = new LimitedArray<number>({ limit: 20 });
     expect(limitedArray instanceof LimitedArray).toBe(true);
 });
 
