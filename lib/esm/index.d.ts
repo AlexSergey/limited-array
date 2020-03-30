@@ -4,7 +4,7 @@ interface PropsInt {
 export default class LimitedArray {
     data: any[];
     limit: number;
-    constructor(props: PropsInt);
+    constructor(props?: PropsInt);
     setLimit(limit: number): boolean;
     checkLimit(): boolean;
     add(data: any): boolean;

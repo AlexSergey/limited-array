@@ -2,12 +2,14 @@ interface PropsInt {
     limit: number;
 }
 
+const DEFAULT_LENGTH = 10;
+
 export default class LimitedArray {
     public data: any[] = [];
     public limit: number = 0;
 
-    constructor(props: PropsInt) {
-        this.limit = (props && typeof props.limit === 'number') ? Math.abs(props.limit) : 10;
+    constructor(props?: PropsInt) {
+        this.limit = (props && typeof props.limit === 'number') ? Math.abs(props.limit) : DEFAULT_LENGTH;
     }
 
     setLimit(limit: number): boolean {
